@@ -2,7 +2,7 @@ from PIL import Image
 
 image = Image.open("image.jpg")
 
-longueur = int(input('quelle longueure en px ? - '))
+longueur = int(input('quelle longueure en px (entre 0 et 100) ? - '))
 largeur = int(longueur * float(image.height/image.width))
 image = image.resize((longueur, largeur))
 
